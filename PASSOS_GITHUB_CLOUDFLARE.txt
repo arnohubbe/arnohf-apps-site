@@ -1,0 +1,31 @@
+PASSOS PARA CRIAR O REPOSITÓRIO NO GITHUB
+
+Nome sugerido:
+arnohf-apps-site
+
+1. Crie um repositório vazio no GitHub com esse nome.
+2. Não marque para criar README, .gitignore ou licença, porque estes arquivos já existem no pacote.
+3. Extraia este pacote para uma pasta local.
+4. Abra o terminal nessa pasta e execute:
+
+git init
+git add .
+git commit -m "Primeira versão do site ArnoHF Apps"
+git branch -M main
+git remote add origin https://github.com/SEU_USUARIO_GITHUB/arnohf-apps-site.git
+git push -u origin main
+
+Depois conecte esse repositório ao Cloudflare Pages.
+
+Cloudflare Pages:
+- Workers & Pages
+- Create application
+- Pages
+- Import an existing Git repository
+- Selecione arnohf-apps-site
+- Production branch: main
+- Framework preset: None
+- Build command: exit 0
+- Build output directory: public
+- Root directory: vazio
+- Save and Deploy
